@@ -27,7 +27,7 @@ ifeq ($(OS),Windows_NT)
 	powershell.exe -ExecutionPolicy Bypass -File out/installer.ps1
 else
 	# On Linux, run the compiled .out file
-	@cd out && ./main.out && cd ..
+	@./out/main.out
 endif
 
 # Rule for generating the executable
